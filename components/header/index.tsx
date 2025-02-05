@@ -79,7 +79,6 @@ const Header: FC = () => {
                     className={cn(styles.header__link, styles.button__login)}
                     href="#"
                   >
-                    {" "}
                     Log in
                   </Link>
                 </li>
