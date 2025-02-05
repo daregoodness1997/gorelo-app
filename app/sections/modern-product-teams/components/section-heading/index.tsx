@@ -1,22 +1,21 @@
-import { type FC } from 'react'
-import styles from './styles.module.css'
+import { type FC } from "react";
+import styles from "./styles.module.css";
 
 const SectionHeading: FC = () => {
-	return (
-		<div className={styles.top__container}>
-			<div className={styles.heading}>
-				<h2>Made for modern product teams</h2>
-			</div>
+  return (
+    <div className={styles.top__container}>
+      <div className={styles.heading}>
+        <h2>Streamline your day-to-day with our ‍AI Platforms</h2>
+      </div>
 
-			<div className={styles.description}>
-				<p>
-					Linear is shaped by the practices and principles that distinguish
-					world-class product teams from the rest: relentless focus, fast
-					execution, and a commitment to the quality of craft.
-				</p>
-			</div>
-		</div>
-	)
-}
+      <div className={styles.description}>
+        <p>
+          Unlock your team&apos;s full potential with our AI platforms, designed
+          to streamline your day-to-day operations and drive success.
+        </p>
+      </div>
+    </div>
+  );
+};
 
-export default SectionHeading
+export default SectionHeading;
