@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+
 import "./globals.css";
+import ScrollWrapper from "@/components/scroll-wrapper";
 
 export const metadata: Metadata = {
   title: "Gorelo",
@@ -18,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
-        {children}
+        <ScrollWrapper>{children}</ScrollWrapper>
         <Footer />
       </body>
     </html>

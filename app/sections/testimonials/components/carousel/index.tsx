@@ -2,7 +2,7 @@ import { type FC } from "react";
 import styles from "./styles.module.css";
 import CarouselCard from "../carouselCard";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import BlogCard from "../blog-card";
+import testimonialsData from "./testimonials.json";
 
 const Carousel: FC = () => {
   return (
@@ -10,13 +10,9 @@ const Carousel: FC = () => {
       <div>
         <div className={styles.carousel__container}>
           <div className={styles.carousel__inner__container}>
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
+            {testimonialsData.map((testimonial, idx) => (
+              <CarouselCard key={idx} {...testimonial} />
+            ))}
           </div>
         </div>
 

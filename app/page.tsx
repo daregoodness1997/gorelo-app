@@ -9,10 +9,11 @@ import Foundation from "./sections/foundation";
 import PreFooter from "./sections/prefooter";
 import AmbientLighting from "@/components/ambient-lighting";
 import FeaturesToExpect from "./sections/features-to-expect";
+import Testimonials from "./sections/testimonials";
 
 const Home: FC = () => {
   return (
-    <main className=" min-h-screen pt-[calc(var(--header-top)+var(--header-height))]">
+    <main className=" min-h-screen  pt-[calc(var(--header-top)+var(--header-height))]">
       <AmbientLighting />
       <Hero />
       <Customers />
@@ -22,6 +23,7 @@ const Home: FC = () => {
       <IssueTracking />
       <Collaborate />
       {/* <Foundation /> */}
+      <Testimonials />
       <PreFooter />
     </main>
   );
