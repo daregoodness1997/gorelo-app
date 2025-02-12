@@ -1,0 +1,42 @@
+{
+  "articles": [
+    {
+      "category": "Tech",
+      "title": "What is BSSID? and What do I need to know about BSSID in IT?",
+      "image": "https://cdn.prod.website-files.com/6757638c15dd04c49ad388b5/67947359043fd3f235fed3fc_What-is-BSSID-feature-image-1024x682-p-800.jpg",
+      "summary": ""
+    },
+    {
+      "category": "Tech",
+      "title": "What is a Metered Connection?",
+      "description": "A metered connection, AKA a metered network, is when you have a limited amount of data. Here is what that really means:",
+      "image": "https://cdn.prod.website-files.com/6757638c15dd04c49ad388b5/679472cee82e895383558bd6_What-is-a-metered-connection-feature-1024x768-p-800.jpg",
+      "summary": ""
+    },
+    {
+      "category": "Tech",
+      "title": "How To Take Screenshots on Windows and Mac",
+      "image": "https://cdn.prod.website-files.com/6757638c15dd04c49ad388b5/679471cc7cd43cd19837d787_taking-screenshots-in-windows-and-mac-feature-1024x724-p-800.jpg",
+      "summary": "https://gorelo-new.webflow.io/blog/how-to-take-screenshot-on-mac-with-windows-keyboard"
+    },
+    {
+      "category": "Tech",
+      "title": "Guide to Check Which Powershell",
+      "image": "https://cdn.prod.website-files.com/6757638c15dd04c49ad388b5/679470c39545deb12b2d49b0_Check-powershell-version-command-1024x683.jpg",
+      "summary": ""
+    },
+    {
+      "category": "Tech",
+      "title": "How to Check System Uptime on Windows",
+      "image": "https://cdn.prod.website-files.com/6757638c15dd04c49ad388b5/6794543fa127eb60fea945e1_check-system-uptime-on-windows-1024x684-p-500.jpg",
+      "summary": ""
+    },
+    {
+      "category": "MSP Insight",
+      "title": "A day with: Huntress",
+      "description": "Post summary here Huntress",
+      "image": "https://cdn.prod.website-files.com/6757638c15dd04c49ad388b5/675fc0046fc4687e088f195c_msp-insight-huntress-p-800.jpg",
+      "summary": "https://huntress.com"
+    }
+  ]
+}

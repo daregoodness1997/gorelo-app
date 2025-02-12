@@ -26,7 +26,7 @@ const Hero: FC = () => {
           <h2 className={cn(styles.sub__heading, styles.hide__mobile)}>
             An all-in-one platform empowering MSPs and IT providers with
             ticketing, billing, documentation, remote computer management, and
-            more!{" "}
+            more!
           </h2>
           <h2 className={cn(styles.sub__heading, styles.show__mobile)}>
             An all-in-one platform empowering MSPs and IT providers with

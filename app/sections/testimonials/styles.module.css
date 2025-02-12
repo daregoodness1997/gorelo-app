@@ -1,0 +1,7 @@
+.testimonials {
+  @apply overflow-x-hidden py-12 sm:py-[160px] isolate block;
+}
+
+.testimonials__carousel {
+  @apply mt-12;
+}

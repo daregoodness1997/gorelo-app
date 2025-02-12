@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+
 import "./globals.css";
+import ScrollWrapper from "@/components/scroll-wrapper";
+import { HeroUIProvider } from "@heroui/system";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "Gorelo",
@@ -15,12 +19,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
-        <Header />
-        {children}
-        <Footer />
-      </body>
+    <html lang="en" className="dark">
+      <Providers>
+        <body>
+          <Header />
+          <ScrollWrapper>{children}</ScrollWrapper>
+          <Footer />
+        </body>
+      </Providers>
     </html>
   );
 }

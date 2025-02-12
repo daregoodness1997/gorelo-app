@@ -1,0 +1,24 @@
+{
+  "faqs": [
+    {
+      "question": "How can Gorelo benefit my business?",
+      "answer": "We make IT management simple by bringing everything—PSA, RMM, and more—into one platform. You'll save time, reduce headaches, and get the tools you need to grow your business without all the chaos. Don't take this FAQ’s word for it — spin up a trial and see for yourself!"
+    },
+    {
+      "question": "How secure is Gorelo?",
+      "answer": "Super secure 🔒. Everything is in Azure and we're well on our way to SOC2 compliance, so you know we're doing things right! You're in good hands."
+    },
+    {
+      "question": "Can I integrate Gorelo with other tools we use?",
+      "answer": "Yep! Our platform works with popular tools like Huntress/Xero/CIPP, so it'll fit right into your existing stack. Got a specific integration in mind? Let us know!"
+    },
+    {
+      "question": "Which languages are supported?",
+      "answer": "Right now, we only support English. If you need another language, tell us—we're always looking to add more options."
+    },
+    {
+      "question": "How does your pricing model work?",
+      "answer": "It’s simple: you pay per user. No hidden fees, no weird contracts. Check out our pricing page or reach out."
+    }
+  ]
+}

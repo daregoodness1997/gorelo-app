@@ -12,9 +12,9 @@ const PreFooter: FC = () => {
             <h3 className={styles.heading}>Get Started with a Free Trial</h3>
             <div className={styles.heading__text__container}>
               <p>
-                Expand the capabilities of the Linear system with a wide variety
-                of integrations that keep everyone in your organization aligned
-                and focused.
+                An all-in-one platform empowering MSPs and IT providers with
+                ticketing, billing, documentation, remote computer management,
+                and more!
               </p>
             </div>
           </div>

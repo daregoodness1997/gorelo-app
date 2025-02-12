@@ -22,7 +22,7 @@ const Header: FC = () => {
 
               <ul className={styles.header__list}>
                 <li className={cn(styles.hide__mobile, styles.header__trigger)}>
-                  <Link className={styles.header__link} href="#">
+                  <Link className={styles.header__link} href="/features">
                     Features
                   </Link>
                 </li>
@@ -49,19 +49,19 @@ const Header: FC = () => {
               </li> */}
 
                 <li className={cn(styles.hide__mobile, styles.header__item)}>
-                  <Link className={styles.header__link} href="#">
+                  <Link className={styles.header__link} href="/pricing">
                     Pricing
                   </Link>
                 </li>
 
                 <li className={cn(styles.hide__mobile, styles.header__trigger)}>
-                  <Link className={styles.header__link} href="#">
+                  <Link className={styles.header__link} href="/about">
                     About
                   </Link>
                 </li>
 
                 <li className={cn(styles.hide__tablet, styles.header__item)}>
-                  <Link className={styles.header__link} href="#">
+                  <Link className={styles.header__link} href="/resources">
                     Resources
                   </Link>
                 </li>

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Jake",
+    "company": "Outside Tech",
+    "testimonial": "The user-friendly GUI, overall performance, and abundance of functionality offered by Gorelo, all at a reasonable price, appeal to me. Additionally, the product’s development team is motivated, receptive, and committed to expansion."
+  },
+  {
+    "name": "Russell",
+    "company": "Zero Point Networks",
+    "testimonial": "We tried Gorelo and set up the basics in a weekend. With Gorelo, we can track all our tasks, including admin, and it integrates with Xero seamlessly, eliminating the need for third-party tools. Their dev team is responsive and the interface is user-friendly."
+  },
+  {
+    "name": "Neil",
+    "company": "IPAU",
+    "testimonial": "We had been through many PSAs and individual SaaS apps till we came across Gorelo. What a breath of fresh air! Our techs and managers finally enjoy using a PSA, the integrations with Pax8, Xero, M365 are well thought out, contract billing is a massive bonus."
+  },
+  {
+    "name": "Kris",
+    "company": "Jorgensen IT",
+    "testimonial": "Gorelo has significantly streamlined our managed offering by automating routine tasks, integrating our operations, and improving overall efficiency."
+  }
+]

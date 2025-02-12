@@ -1,0 +1,43 @@
+.card {
+  @apply relative isolate overflow-hidden flex flex-col justify-end px-6 py-4 md:p-8 w-[336px] hover:brightness-[170%]  backdrop-blur-[10px] rounded-2xl p-4 border border-[hsla(0,0%,100%,0.1)] cursor-pointer;
+  max-width: calc(
+    100vw - var(--page-padding-left) - var(--page-padding-right) - 32px
+  );
+}
+
+.card::after {
+  @apply content-[''] pointer-events-none absolute inset-0 z-[1];
+  background: linear-gradient(
+      to bottom,
+      var(--color-bg-primary) 0,
+      transparent 30%
+    ),
+    linear-gradient(to right, transparent 60%, var(--color-bg-primary) 100%);
+}
+
+.content__container {
+  @apply w-full flex justify-between items-end gap-6;
+}
+
+.card__heading__container {
+  @apply flex flex-col gap-1 w-[400px];
+}
+
+.card__heading__container h3 {
+  @apply text-[13px] leading-[19px] tracking-[-0.12px] font-medium text-[var(--color-text-tertiary)];
+}
+.card__heading__container h4 {
+  @apply text-[16px] leading-[24px] tracking-[-0.12px] font-bold text-[var(--color-text-tertiary)];
+}
+
+.card__heading__container p {
+  @apply text-balance text-[15px] leading-[23px] tracking-[-0.16px] font-medium text-[var(--color-text-primary)];
+}
+
+.icon__button {
+  @apply flex justify-center items-center text-base text-[var(--color-text-tertiary)] hover:text-[var(--color-text-primary)] rounded-full w-10 h-10 p-4 border-2 border-[var(--color-bg-secondary)] bg-[var(--color-bg-primary)] hover:bg-[var(--color-bg-secondary)] transition-colors;
+}
+
+.icon__button svg {
+  @apply flex-shrink-0;
+}
