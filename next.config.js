@@ -1,7 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    esmExternals: "loose", // Ensure ES module compatibility
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.prod.website-files.com",
+      },
+    ],
   },
   webpack(config) {
     // Grab the existing rule that handles SVG imports

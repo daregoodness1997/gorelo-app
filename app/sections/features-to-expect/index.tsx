@@ -52,24 +52,26 @@ const FeaturesToExpect: FC = () => {
         <BentoGrid>
           <BentoGridTopLayer>
             <BentoCardLeft
-              title="Manage projects end-to-end"
-              description="Consolidate specs, milestones, tasks, and other documentation in one centralized location."
+              title="Track, manage, and delight"
+              description="Tickets done right. Along with the rest—billing, documentation, forms, client portal & more. 🤝
+
+"
             >
-              <FirstCard />
+              <FirstCard image="/tickets.webp" />
             </BentoCardLeft>
             <BentoGridCardRight
-              title="Project updates"
-              description="Communicate progress and project health with built-in project updates."
+              title="Automate your way out of a job"
+              description="Just don't tell anyone 🤫. Automate repetitive tasks, monitor your systems in real-time, and integrate with the tools you already use."
             >
-              <SecondCard />
+              <FirstCard image="/group.webp" />
             </BentoGridCardRight>
           </BentoGridTopLayer>
 
-          <div className="h-6"></div>
+          {/* <div className="h-6"></div>
 
           <BentoGridWideCardWrapper>
             <WideCard />
-          </BentoGridWideCardWrapper>
+          </BentoGridWideCardWrapper> */}
 
           <BentoGridSeperator />
 

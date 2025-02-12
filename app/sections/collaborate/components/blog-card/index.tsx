@@ -1,42 +1,32 @@
 import { type FC } from "react";
-import People from "@/assets/people.svg";
 import Placeholder from "@/assets/placeholder-1.svg";
+import EditorContent from "@/assets/editor-content.svg";
+
 import styles from "./styles.module.css";
+import Image from "next/image";
 
-const BlogCard: FC = () => {
+interface Props {
+  image: string;
+  heading: string;
+  summary: string;
+}
+const BlogCard: FC<Props> = ({ image, heading, summary }) => {
+  const firstTwoWords = heading?.split(" ").slice(0, 2).join(" ") || "";
+  const remainingWords = heading?.split(" ").slice(2).join(" ") || "";
   return (
-    <div className={styles.collaborative__docs}>
-      <div className={styles.icons__container}>
-        <People />
+    <div className={styles.blog_container}>
+      <div className={styles.blog_image_container}>
+        <Image
+          alt={heading}
+          src={image}
+          fill
+          loading="lazy"
+          className={styles.blog_image}
+        />
       </div>
-      <span className={styles.heading}>
-        <span className={styles.editor__remote__selection}>
-          {" "}
-          Collaborate on
-        </span>
-        <span className={styles.remote__selection__cursor}>
-          <span className={styles.editor__remote__label}>
-            <span className={styles.editor__remote__name}>Zoe</span>
-          </span>
-        </span>
-        {"    "}
-        ideas
-      </span>
+      <h4 className={styles.heading}>{heading}</h4>
 
-      <span className={styles.paragraph}>
-        Write down product ideas and work together on feature specs in realtime,
-        multiplayer project
-        <span className={styles.remote__cursor}>
-          <span className={styles.remote__label}>
-            <span className={styles.remote__name}> quinn </span>
-          </span>
-        </span>
-        documents. Add <span className={styles.hightlight}>**</span>style
-        <span className={styles.hightlight}>**</span> and{" "}
-        <span className={styles.hightlight}>##</span>
-        structure with rich-text formatting options.
-      </span>
-      <Placeholder />
+      <p className={styles.paragraph}>{summary}</p>
     </div>
   );
 };

@@ -1,3 +1,5 @@
+"use client";
+
 import { type FC } from "react";
 import Hero from "./sections/hero";
 import Customers from "./sections/customers";
@@ -10,20 +12,22 @@ import PreFooter from "./sections/prefooter";
 import AmbientLighting from "@/components/ambient-lighting";
 import FeaturesToExpect from "./sections/features-to-expect";
 import Testimonials from "./sections/testimonials";
+import FAQs from "./sections/faqs";
 
 const Home: FC = () => {
   return (
-    <main className=" min-h-screen  pt-[calc(var(--header-top)+var(--header-height))]">
+    <main className=" min-h-screen overflow-y-auto  pt-[calc(var(--header-top)+var(--header-height))]">
       <AmbientLighting />
       <Hero />
       <Customers />
       <ModernProductTeams />
       <FeaturesToExpect />
       {/* <LongTermPlanning /> */}
-      <IssueTracking />
+      {/* <IssueTracking /> */}
       <Collaborate />
       {/* <Foundation /> */}
       <Testimonials />
+      <FAQs />
       <PreFooter />
     </main>
   );

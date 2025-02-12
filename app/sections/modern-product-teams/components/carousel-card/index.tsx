@@ -3,7 +3,9 @@ import { type FC } from "react";
 import Image from "next/image";
 import styles from "./styles.module.css";
 import { Plus } from "lucide-react";
-import { Tilt } from "react-next-tilt";
+import dynamic from "next/dynamic";
+
+// const Tilt = dynamic(() => import("react-next-tilt"), { ssr: false });
 export type CarouselCardProps = {
   id: string;
   img: string;
@@ -12,12 +14,13 @@ export type CarouselCardProps = {
 
 const CarouselCard: FC<CarouselCardProps> = ({ img, title }) => {
   return (
-    <Tilt
-      tiltClass={styles.carousel__card}
-      scale={0.8}
-      shadowEnable
-      borderRadius="30px"
-    >
+    // <Tilt
+    //   tiltClass={styles.carousel__card}
+    //   scale={0.8}
+    //   shadowEnable
+    //   borderRadius="30px"
+    // >
+    <div className={styles.carousel__card}>
       <button className={styles.outter__container}>
         <div className={styles.img__container}>
           <Image src={img} alt="" width={960} height={914} />
@@ -32,7 +35,9 @@ const CarouselCard: FC<CarouselCardProps> = ({ img, title }) => {
           </div>
         </div>
       </button>
-    </Tilt>
+    </div>
+
+    // </Tilt>
   );
 };
 

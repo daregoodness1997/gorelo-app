@@ -32,9 +32,9 @@ const Collaborate: FC = () => {
         </div>
       </LayoutWrapper>
 
-      <div className={styles.carousel__container}>
+      <LayoutWrapper>
         <Carousel />
-      </div>
+      </LayoutWrapper>
     </section>
   );
 };

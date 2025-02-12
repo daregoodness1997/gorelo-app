@@ -14,12 +14,12 @@ export type FooterSection = {
 
 export const footerSections: FooterSection[] = [
   {
-    title: "Features",
+    title: "Product",
     items: [
       {
         id: "footer-section-11",
         link: "#",
-        item: "Integrations",
+        item: "Home",
       },
       {
         id: "footer-section-12",
@@ -29,22 +29,17 @@ export const footerSections: FooterSection[] = [
       {
         id: "footer-section-13",
         link: "#",
-        item: "Changelog",
+        item: "Automation",
       },
       {
-        id: "footer-section-14",
+        id: "footer-section-23",
         link: "#",
-        item: "Docs",
+        item: "Service Delivery (PSA)",
       },
       {
-        id: "footer-section-15",
+        id: "footer-section-24",
         link: "#",
-        item: "Linear Method",
-      },
-      {
-        id: "footer-section-16",
-        link: "#",
-        item: "Download",
+        item: "Remote Management (RMM)",
       },
     ],
   },
@@ -66,16 +61,6 @@ export const footerSections: FooterSection[] = [
         link: "#",
         item: "Careers",
       },
-      {
-        id: "footer-section-24",
-        link: "#",
-        item: "Customers",
-      },
-      {
-        id: "footer-section-25",
-        link: "#",
-        item: "Brand",
-      },
     ],
   },
   {
@@ -84,23 +69,19 @@ export const footerSections: FooterSection[] = [
       {
         id: "footer-section-31",
         link: "#",
-        item: "Startup Program",
+        item: "Roadmap",
       },
       {
         id: "footer-section-32",
         link: "#",
-        item: "Community",
+        item: "Changelog",
       },
       {
         id: "footer-section-33",
         link: "#",
-        item: "Contact",
+        item: "Help Center",
       },
-      {
-        id: "footer-section-34",
-        link: "#",
-        item: "DPA",
-      },
+
       {
         id: "footer-section-35",
         link: "#",
@@ -111,38 +92,33 @@ export const footerSections: FooterSection[] = [
         link: "#",
         item: "Terms of service",
       },
-      {
-        id: "footer-section-37",
-        link: "#",
-        item: "Report a vulnerability",
-      },
     ],
   },
-  {
-    title: "Developers",
-    items: [
-      {
-        id: "footer-section-41",
-        link: "#",
-        item: "API",
-      },
-      {
-        id: "footer-section-42",
-        link: "#",
-        item: "Status",
-      },
-      {
-        id: "footer-section-43",
-        link: "#",
-        item: "GitHub",
-      },
-      {
-        id: "footer-section-44",
-        link: "#",
-        item: "README",
-      },
-    ],
-  },
+  // {
+  //   title: "Developers",
+  //   items: [
+  //     {
+  //       id: "footer-section-41",
+  //       link: "#",
+  //       item: "API",
+  //     },
+  //     {
+  //       id: "footer-section-42",
+  //       link: "#",
+  //       item: "Status",
+  //     },
+  //     {
+  //       id: "footer-section-43",
+  //       link: "#",
+  //       item: "GitHub",
+  //     },
+  //     {
+  //       id: "footer-section-44",
+  //       link: "#",
+  //       item: "README",
+  //     },
+  //   ],
+  // },
 ];
 
 export type FoundationListItem = {
