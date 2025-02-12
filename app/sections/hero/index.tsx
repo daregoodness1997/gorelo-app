@@ -19,7 +19,7 @@ const Hero: FC = () => {
         </h1>
 
         <h1 className={cn(styles.heading, styles.show__mobile, "text-center")}>
-          <BlurPopUpByWord text="Ticketing, billing & documentation" />
+          <BlurPopUpByWord text="Gorelo is purpose-built to Deliver IT Services" />
         </h1>
 
         <BlurPopUp delay={1}>
