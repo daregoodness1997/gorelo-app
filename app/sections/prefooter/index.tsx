@@ -28,20 +28,18 @@ const PreFooter: FC = () => {
           </div>
 
           <div className={styles.links__outter__container}>
-            <div className={styles.links__inner__container}>
-              <BlurPopUp delay={1.1}>
+            <BlurPopUp delay={1.1}>
+              <div className={styles.links__inner__container}>
                 <Link className={styles.get__started__link} href="/">
                   {" "}
                   Get Started{" "}
                 </Link>
-              </BlurPopUp>{" "}
-              <BlurPopUp delay={1.15}>
                 <Link className={styles.talk__to__sales} href="/">
                   {" "}
                   Book a Demo{" "}
                 </Link>
-              </BlurPopUp>
-            </div>
+              </div>
+            </BlurPopUp>{" "}
           </div>
         </div>
       </LayoutWrapper>
