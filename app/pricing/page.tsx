@@ -1,3 +1,5 @@
+"use client";
+
 import { type FC, memo } from "react";
 import styles from "./styles.module.css";
 import LayoutWrapper from "@/components/layout-wrapper";
