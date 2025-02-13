@@ -17,6 +17,7 @@ import { longTermFeatureLookup } from "./feature-lookup-data";
 import FirstCard from "./components/first-card";
 import SecondCard from "./components/second-card";
 import WideCard from "./components/wide-card";
+import SectionWrapper from "@/components/section-wrapper";
 
 const FeaturesToExpect: FC = () => {
   return (
@@ -57,13 +58,13 @@ const FeaturesToExpect: FC = () => {
 
 "
             >
-              <FirstCard image="/tickets.webp" />
+              <FirstCard image="/contract-detail.png" />
             </BentoCardLeft>
             <BentoGridCardRight
               title="Automate your way out of a job"
               description="Just don't tell anyone 🤫. Automate repetitive tasks, monitor your systems in real-time, and integrate with the tools you already use."
             >
-              <FirstCard image="/group.webp" />
+              <FirstCard image="/hero-transparent.png" />
             </BentoGridCardRight>
           </BentoGridTopLayer>
 
@@ -89,4 +90,4 @@ const FeaturesToExpect: FC = () => {
   );
 };
 
-export default FeaturesToExpect;
+export default SectionWrapper(FeaturesToExpect);
