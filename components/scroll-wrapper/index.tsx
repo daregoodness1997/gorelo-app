@@ -1,6 +1,7 @@
 "use client";
 import { FC, ReactNode, useRef } from "react";
 import { useScrollIntoView } from "@/hooks/useScrollIntoView";
+import dynamic from "next/dynamic";
 
 type Props = {
   children: ReactNode;

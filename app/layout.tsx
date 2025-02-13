@@ -4,7 +4,6 @@ import Footer from "@/components/footer";
 
 import "./globals.css";
 import ScrollWrapper from "@/components/scroll-wrapper";
-import { HeroUIProvider } from "@heroui/system";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {

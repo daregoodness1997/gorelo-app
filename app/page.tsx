@@ -20,15 +20,15 @@ const Home: FC = () => {
       <AmbientLighting />
       <Hero />
       <Customers />
-      <ModernProductTeams />
-      <FeaturesToExpect />
+      <ModernProductTeams idName="teams" />
+      <FeaturesToExpect idName="features" />
       {/* <LongTermPlanning /> */}
       {/* <IssueTracking /> */}
-      <Collaborate />
+      <Collaborate idName="blogs" />
       {/* <Foundation /> */}
-      <Testimonials />
-      <FAQs />
-      <PreFooter />
+      <Testimonials idName="testimonials" />
+      <FAQs idName="faqs" />
+      <PreFooter idName="pre-footer" />
     </main>
   );
 };

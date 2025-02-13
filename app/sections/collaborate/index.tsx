@@ -5,6 +5,7 @@ import Carousel from "./components/carousel";
 import LayoutWrapper from "@/components/layout-wrapper";
 import { EmblaOptionsType } from "embla-carousel";
 import EmblaCarousel from "../slider/EmblaCarousel";
+import SectionWrapper from "@/components/section-wrapper";
 
 const OPTIONS: EmblaOptionsType = { loop: true };
 const SLIDE_COUNT = 5;
@@ -39,4 +40,4 @@ const Collaborate: FC = () => {
   );
 };
 
-export default Collaborate;
+export default SectionWrapper(Collaborate);

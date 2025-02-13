@@ -2,6 +2,9 @@ import { type FC } from "react";
 import styles from "./styles.module.css";
 import Link from "next/link";
 import LayoutWrapper from "@/components/layout-wrapper";
+import SectionWrapper from "@/components/section-wrapper";
+import BlurPopUpByWord from "@/components/blur-pop-up-by-words";
+import BlurPopUp from "@/components/blur-pop-up";
 
 const PreFooter: FC = () => {
   return (
@@ -9,26 +12,35 @@ const PreFooter: FC = () => {
       <LayoutWrapper>
         <div className={styles.grid__container}>
           <div className="">
-            <h3 className={styles.heading}>Get Started with a Free Trial</h3>
+            <h3 className={styles.heading}>
+              <BlurPopUpByWord text="Get Started with a Free Trial" />
+            </h3>
+
             <div className={styles.heading__text__container}>
-              <p>
-                An all-in-one platform empowering MSPs and IT providers with
-                ticketing, billing, documentation, remote computer management,
-                and more!
-              </p>
+              <BlurPopUp delay={1}>
+                <p>
+                  An all-in-one platform empowering MSPs and IT providers with
+                  ticketing, billing, documentation, remote computer management,
+                  and more!
+                </p>
+              </BlurPopUp>
             </div>
           </div>
 
           <div className={styles.links__outter__container}>
             <div className={styles.links__inner__container}>
-              <Link className={styles.get__started__link} href="/">
-                {" "}
-                Get Started{" "}
-              </Link>
-              <Link className={styles.talk__to__sales} href="/">
-                {" "}
-                Book a Demo{" "}
-              </Link>
+              <BlurPopUp delay={1.1}>
+                <Link className={styles.get__started__link} href="/">
+                  {" "}
+                  Get Started{" "}
+                </Link>
+              </BlurPopUp>{" "}
+              <BlurPopUp delay={1.15}>
+                <Link className={styles.talk__to__sales} href="/">
+                  {" "}
+                  Book a Demo{" "}
+                </Link>
+              </BlurPopUp>
             </div>
           </div>
         </div>
@@ -37,4 +49,4 @@ const PreFooter: FC = () => {
   );
 };
 
-export default PreFooter;
+export default SectionWrapper(PreFooter);

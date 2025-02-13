@@ -4,6 +4,7 @@ import LayoutWrapper from "@/components/layout-wrapper";
 import SectionHeading from "@/components/sectionHeading";
 import Link from "next/link";
 import Carousel from "./components/carousel";
+import SectionWrapper from "@/components/section-wrapper";
 
 const Testimonials = () => {
   return (
@@ -29,4 +30,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default SectionWrapper(Testimonials);

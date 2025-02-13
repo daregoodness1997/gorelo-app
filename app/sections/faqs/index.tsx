@@ -6,6 +6,9 @@ import SectionHeading from "@/components/sectionHeading";
 import Link from "next/link";
 import { Accordion, AccordionItem } from "@heroui/react";
 import faqsData from "./faqs.json";
+import SectionWrapper from "@/components/section-wrapper";
+import { motion } from "framer-motion";
+import { staggerContainer } from "@/lib/motion";
 
 const FAQs = () => {
   return (
@@ -25,7 +28,13 @@ const FAQs = () => {
       </LayoutWrapper>
 
       <LayoutWrapper>
-        <div className={styles.testimonials__carousel}>
+        <motion.div
+          className={styles.testimonials__carousel}
+          variants={staggerContainer()}
+          initial="hidden"
+          viewport={{ once: false, amount: 0.25 }}
+          whileInView={"show"}
+        >
           <Accordion variant="splitted">
             {faqsData.faqs.map((faq, idx) => (
               <AccordionItem
@@ -37,10 +46,10 @@ const FAQs = () => {
               </AccordionItem>
             ))}
           </Accordion>
-        </div>
+        </motion.div>
       </LayoutWrapper>
     </section>
   );
 };
 
-export default FAQs;
+export default SectionWrapper(FAQs);
